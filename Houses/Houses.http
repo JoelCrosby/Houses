@@ -1,0 +1,29 @@
+@HostAddress = http://localhost:5105
+
+POST {{HostAddress}}/house
+Content-Type: application/json
+
+{
+    "style": "Terraced",
+    "bedrooms": 2
+}
+
+###
+
+POST {{HostAddress}}/house
+Content-Type: application/json
+
+{
+  "style": "SemiDetached",
+  "bedrooms": 7
+}
+
+###
+
+POST {{HostAddress}}/house
+Content-Type: application/json
+
+{
+  "style": "Detached",
+  "bedrooms": 2
+}
